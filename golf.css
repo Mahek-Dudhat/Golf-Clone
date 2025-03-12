@@ -1,0 +1,674 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+    color: white;
+}
+
+*::selection {
+    color: #95c11e;
+    background-color: #fff;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    perspective: 500px;
+}
+
+body::-webkit-scrollbar {
+    display: block;
+    width: 10px;
+    background-color: #95c11e;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 10px;
+
+}
+
+/* nav{
+    position: fixed;
+} */
+
+
+/* NAVBAR */
+nav,
+.navcontainer {
+    height: 13.5vh;
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 99;
+}
+
+/* .navcontainer {
+    position: relative;
+
+} */
+
+.navcontainer #p1 .logo {
+    position: relative;
+    top: 0.5rem;
+
+}
+
+.navcontainer .logo a img {
+    width: 5rem;
+    height: 5rem;
+
+}
+
+nav .navcontainer #p1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+
+}
+
+.menu ul li {
+    list-style: none;
+    font-size: 0.94rem;
+    padding: 0 0 0 3.5rem;
+    font-weight: 500;
+}
+
+ul li a {
+
+    text-decoration: none;
+    transition: all ease-in-out 0.5s;
+}
+
+ul>li>a:hover {
+    color: #b0e41f;
+}
+
+.navcontainer #p1 .btncontainer {
+
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.btncontainer a {
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.btncontainer button {
+
+    height: 2.5rem;
+    width: 10rem;
+    border: 3px solid rgb(129, 196, 29);
+    border-radius: 2rem;
+    background-color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.7rem 0.7rem 1.8rem 0.7rem;
+    box-shadow: 2px 2px 10px black;
+    margin-right: 1rem;
+    transition: all 0.3s ease 0.5s;
+
+}
+
+.btncontainer button:hover {
+    /* background-color: #95c11e; */
+    border: 1px solid green;
+    animation: btnanimation 2s ease 0.2s infinite normal;
+
+}
+
+@keyframes btnanimation {
+
+    0% {
+        background-color: #577408;
+    }
+
+    100% {
+        background-color: #b0e41f;
+        color: black;
+    }
+
+}
+
+video {
+
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* CUSTOME CURSOR STYLING */
+
+#cursor {
+    height: 20px;
+    width: 20px;
+    background-color: #95c11e;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+}
+
+#cursorBlur {
+    height: 400px;
+    width: 400px;
+    background-color: #96c11e3c;
+    border-radius: 50%;
+    filter: blur(40px);
+    position: fixed;
+    z-index: 9;
+}
+
+/* HERO SECTION */
+
+#main {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* PAGE-1 STYLING: */
+/* PAGE-1 CONTAINS DIFFERENT TYPES OF HEADINGS. */
+
+
+#page1 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+}
+
+#page1 h1 {
+    font-size: 5.8rem;
+    font-weight: 900;
+    position: relative;
+    text-transform: uppercase;
+}
+
+#page1 h1::before {
+    content: "Eat. Drink. Play.";
+    position: absolute;
+    color: black;
+    top: -4px;
+    left: -4px;
+    z-index: -1;
+    -webkit-text-stroke: 1.5px #95c11e;
+    text-transform: uppercase;
+}
+
+#page1 h2 {
+    font-weight: 900;
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+#page1 p {
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    width: 80%;
+    font-size: 1.2rem;
+}
+
+/* ARROW STYLING: */
+
+#page1 #arrow {
+    position: absolute;
+    height: 12rem;
+    width: 12rem;
+    border: 2px solid #95c11e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 50%;
+    left: -3%;
+    bottom: 2%;
+    transition: all ease-in-out 0.5s;
+}
+
+#arrow>i {
+    font-size: 2.5rem;
+}
+
+#page1 #arrow:hover {
+    scale: 0.4;
+    background-color: #95c11e;
+}
+
+
+/* PAGE-2 STYLING: */
+/* PAGE-2 CONTAINS DIFFERENT TYPES OF SECTIONS LIKE:
+1-HEADINGS
+2-ABOUT
+3-CARDS
+4-BANNER */
+
+#page2 {
+    min-height: 100vh;
+    width: 100%;
+    z-index: 10;
+}
+
+/* FOR SCROLLING: */
+
+#scroller {
+
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+}
+
+#scroller::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollerIn {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrolling 20s linear infinite;
+}
+
+#scroller .scrollerIn h4 {
+    display: inline-block;
+    font-size: 5.5rem;
+    -webkit-text-stroke: 2px #95c11e;
+    color: transparent;
+    padding-right: 1.5rem;
+    font-weight: 900;
+    transition: all 0.5s ease;
+}
+
+#scroller h4:hover {
+    color: #95c11e;
+}
+
+
+/* FOR SCROLLING ANIMATION: */
+
+@keyframes scrolling {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+/* ABOUT US: */
+
+#aboutUs {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+    padding: 0 5rem;
+    position: relative;
+    z-index: 10;
+    margin-top: 3rem;
+
+}
+
+#aboutUs #content h2 {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 2.3rem;
+    font-weight: 900;
+}
+
+#content {
+    width: 50%;
+    text-align: center;
+    /* margin: auto 4rem; */
+}
+
+#aboutContent {
+    font-size: 1.2rem;
+
+}
+
+#aboutContent p {
+    line-height: 2rem;
+}
+
+#aboutUs #img1 img {
+
+    height: 9rem;
+    width: 9rem;
+    border-radius: 7%;
+    margin-top: 5rem;
+
+}
+
+#aboutUs #img2 img {
+
+    height: 12rem;
+    width: 9rem;
+    border-radius: 7%;
+    margin-top: 5rem;
+    object-fit: cover;
+
+}
+
+/* FOR RESPONSIVENESS OF ABOUT SECTION: */
+
+@media (max-width:1168px) {
+
+    #aboutUs {
+        height: 100%;
+        flex-direction: column;
+    }
+
+}
+
+/* CARDS STYLING: */
+
+#cardsContainer {
+
+
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 3rem;
+    position: relative;
+    z-index: 10;
+}
+
+
+.cards {
+    height: 90%;
+    width: 24%;
+    background-color: blue;
+    border-radius: 10px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    transition: all ease-in-out 0.6s;
+}
+
+#card1 {
+    background-image: url("home-toptracer.avif");
+}
+
+#card2 {
+    background-image: url("hero-4.avif");
+}
+
+#card3 {
+    background-image: url("home-lessons.avif");
+}
+
+.cards:hover .overlay {
+    opacity: 1;
+}
+
+.cards:hover {
+    transform: rotate3d(1, 1, 0, 20deg);
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: #95c11e;
+    opacity: 0;
+    transition: all ease-in-out 0.5s;
+}
+
+.overlay>h4 {
+    padding: 6rem 3rem 2rem 2.2rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: black;
+}
+
+.overlay>p {
+    padding: 0 2rem 0 2rem;
+    line-height: 1.5rem;
+    color: black;
+}
+
+.greenDiv {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to left bottom, #119f3a, #ace022);
+    margin-top: 2.8rem;
+}
+
+.greenDiv img {
+
+    height: 100%;
+    width: 15%;
+    object-fit: cover;
+    background-size: cover;
+
+}
+
+.greenDiv pre {
+    width: 40%;
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 2.5rem;
+    color: black;
+    text-transform: uppercase;
+}
+
+@media (max-width:938px) {
+
+    .greenDiv pre {
+        width: 20%;
+    }
+
+}
+
+
+/* PAGE-3 STYLING: */
+
+#page3 {
+
+    height: 100%;
+    width: 100%;
+
+}
+
+#page3 {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#page3>pre {
+    width: 60%;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: white;
+    text-transform: uppercase;
+    line-height: 2.5rem;
+}
+
+#page3 img {
+    position: absolute;
+    height: 3rem;
+}
+
+#page3 #quote1 {
+    left: 13%;
+    top: 30%;
+}
+
+#page3 #quote2 {
+    right: 13%;
+    top: 65%;
+}
+
+/* FOR RESPONSIVENESS OF PAGE-3 PRE SECTION: */
+
+@media (max-width:1067px) {
+    #page3>pre {
+        width: 50%;
+    }
+}
+
+/* PAGE-4 STYLING: */
+
+#page4 {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    margin-top: -4rem;
+}
+
+.elem {
+
+    position: relative;
+    width: 25%;
+    height: 35%;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: all ease-in-out 1s;
+
+}
+
+.elem h2 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #95c11e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: black;
+    font-weight: 900;
+    z-index: 10;
+    font-size: 2rem;
+    transition: all ease-in-out 0.5s;
+}
+
+.elem img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-size: cover;
+    scale: 1.1;
+    transition: all ease-in-out 0.5s;
+}
+
+.elem:hover h2 {
+    color: white;
+    background-color: transparent;
+}
+
+.elem:hover img {
+    scale: 1;
+}
+
+.elem:hover #page4>h1 {
+    -webkit-text-stroke: 2px #95c11e;
+}
+
+#page4 h1 {
+    color: black;
+    font-size: 5.1rem;
+    position: absolute;
+    top: 15%;
+    font-family: gilroy;
+    -webkit-text-stroke: 2px white;
+    font-weight: 800;
+}
+
+/* STYLING FOOTER: */
+
+footer {
+    height: 40vh;
+    width: 100%;
+    background: linear-gradient(to left bottom, #119f3a, #ace022);
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    gap: 7rem;
+}
+
+footer div {
+    padding-top: 3rem;
+}
+
+
+footer #f1 a img {
+    height: 7rem;
+    width: 7rem;
+}
+
+footer h3 {
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 2.2rem;
+}
+
+footer #f4 pre,
+h5 {
+    color: black;
+    text-transform: uppercase;
+}
+
+#f4 h5 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding-left: 5.5rem;
+    padding-bottom: 3rem;
+}
+
+#f4 pre {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* FOR RESPONSIVENESS OF FOOTER SECTION: */
+
+@media (max-width:1044px) {
+    footer {
+        height: 70vh;
+        grid-template-columns: auto auto;
+    }
+}
