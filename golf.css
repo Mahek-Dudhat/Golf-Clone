@@ -413,15 +413,15 @@ video {
 }
 
 #card1 {
-    background-image: url("home-toptracer.avif");
+    background-image: url("./Images&video/home-toptracer.avif");
 }
 
 #card2 {
-    background-image: url("hero-4.avif");
+    background-image: url("./Images&video/hero-4.avif");
 }
 
 #card3 {
-    background-image: url("home-lessons.avif");
+    background-image: url("./Images&video/home-lessons.avif");
 }
 
 .cards:hover .overlay {
